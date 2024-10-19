@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm [Your Name]. This is where I showcase my projects and achievements.</p>
+    <header class="header">
+        <h1>Catharine Santos</h1>
+        <p>Aspiring Engineer</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>Write a brief introduction about yourself, your background, and your skills.</p>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project Title 1</h3>
+                <p>Description of the project, technologies used, and your role.</p>
+            </li>
+            <li>
+                <h3>Project Title 2</h3>
+                <p>Description of the project, technologies used, and your role.</p>
+            </li>
+            <!-- Add more projects as needed -->
+        </ul>
+    </section>
+
+    <section id="awards" class="fade-in">
+        <h2>Awards</h2>
+        <ul>
+            <li>
+                <h3>Award Title 1</h3>
+                <p>Brief description of the award and the year you received it.</p>
+            </li>
+            <li>
+                <h3>Award Title 2</h3>
+                <p>Brief description of the award and the year you received it.</p>
+            </li>
+            <!-- Add more awards as needed -->
+        </ul>
+    </section>
+
+    <section id="experience" class="fade-in">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <h3>Job Title / Position</h3>
+                <p>Company Name, Year - Year</p>
+                <p>Brief description of your responsibilities and achievements.</p>
+            </li>
+            <li>
+                <h3>Job Title / Position</h3>
+                <p>Company Name, Year - Year</p>
+                <p>Brief description of your responsibilities and achievements.</p>
+            </li>
+            <!-- Add more experience as needed -->
+        </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Contact Me</h2>
+        <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fade-in effect for sections
+        const sections = document.querySelectorAll('.fade-in');
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                section.style.opacity = 1;
+                section.style.transform = 'translateY(0)';
+                section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+            }, 100);
+        });
+    </script>
 </body>
 </html>
+
