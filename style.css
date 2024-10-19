@@ -1,31 +1,42 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
 .header {
-    background: linear-gradient(135deg, #35424a, #42a5f5);
-    color: white;
-    padding: 40px 20px;
+    background: #ffffff;
+    padding: 60px 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #777;
 }
 
 .navbar {
     background: #35424a;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .navbar ul {
     list-style-type: none;
-    padding: 0;
+    text-align: center;
 }
 
 .navbar ul li {
@@ -36,6 +47,7 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #ffffff;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
@@ -44,8 +56,9 @@ body {
 }
 
 section {
-    padding: 40px 20px;
-    margin: 20px 0;
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 800px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -58,8 +71,17 @@ section:hover {
 }
 
 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
     border-bottom: 2px solid #35424a;
     padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 15px 0;
 }
 
 ul {
@@ -68,7 +90,7 @@ ul {
 }
 
 ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .footer {
@@ -80,3 +102,4 @@ ul li {
     bottom: 0;
     width: 100%;
 }
+
